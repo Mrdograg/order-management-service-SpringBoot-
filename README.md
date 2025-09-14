@@ -42,14 +42,13 @@ It provides REST APIs to **place, track, and update orders** with **MySQL persis
    CREATE DATABASE foodorders;
 
 2. **Configure application.properties**  
-spring.datasource.url=jdbc:mysql://127.0.0.1:3306/foodorders
-spring.datasource.username="username"
-spring.datasource.password="password"
-
-sqs.queue.url=https://sqs.ap-south-1.amazonaws.com/1234567890/food-orders-queue
-aws.region=ap-south-1
-aws.accessKeyId=${AWS_ACCESS_KEY_ID}
-aws.secretAccessKey=${AWS_SECRET_ACCESS_KEY}
+- spring.datasource.url=jdbc:mysql://127.0.0.1:3306/foodorders
+- spring.datasource.username="username"
+- spring.datasource.password="password"
+- sqs.queue.url=https://sqs.ap-south-1.amazonaws.com/1234567890/food-orders-queue
+- aws.region=ap-south-1
+- aws.accessKeyId=${AWS_ACCESS_KEY_ID}
+- aws.secretAccessKey=${AWS_SECRET_ACCESS_KEY}
 
 3. **Set AWS Credentials (Environment Variables)** 
 export AWS_ACCESS_KEY_ID=your_key
