@@ -8,7 +8,7 @@ It provides REST APIs to **place, track, and update orders** with **MySQL persis
 ## ✨ Features  
 - ✅ Place and retrieve customer food orders  
 - ✅ Paginated order listing with sorting  
-- ✅ Update order status (`PLACED`, `PROCESSED`, `DELIVERED`)  
+- ✅ Update order status (`PENDING`, `PROCESSING`, `PROCESSED`, `FAILED`, `CANCELLED`)  
 - ✅ Publish order events to **AWS SQS** for downstream services (payment, delivery, etc.)  
 - ✅ Built with **clean layered architecture**: Controller → Service → Repository → Entity → DTO  
 
